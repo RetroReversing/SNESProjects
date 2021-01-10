@@ -1,0 +1,54 @@
+
+.BANK $0005 SLOT 0
+.ORGA $000081FB
+	sep.b #$00000030; Immediate8 ;000081FB
+	lda.W $00001931 ;Absolute ;000081FD
+	ASL ;00008200
+	TAX ;00008201
+	LDA.B #$00000005; Immediate8 ;00008202
+	sta.b $0000000F ;Direct ;00008204
+	LDA.B #$00000000; Immediate8 ;00008206
+	sta.b $00000084 ;Direct ;00008208
+	LDA.B #$000000C4; Immediate8 ;0000820A
+	sta.W $00001430 ;Absolute ;0000820C
+	LDA.B #$000000CA; Immediate8 ;0000820F
+	sta.W $00001431 ;Absolute ;00008211
+	rep.b #$00000020 ;Immediate8 ;00008214
+	LDA.W #$0000E55E ; Immediate16 ;00008216
+	sta $00000082 ;Direct ;00008219
+	lda.L $00058000, x ;AbsoluteLongIndexedX ;0000821B
+	sta $00000000 ;Direct ;0000821F
+	LDA.W #$00008000 ; Immediate16 ;00008221
+	sta $00000002 ;Direct ;00008224
+	LDA.W #$000081BB ; Immediate16 ;00008226
+	sta $0000000D ;Direct ;00008229
+	stz $00000004 ;Direct ;0000822B
+	stz $00000009 ;Direct ;0000822D
+	stz $0000000B ;Direct ;0000822F
+	rep.b #$00000010 ;Immediate8 ;00008231
+	LDY.W #$00000000 ;Immediate16 ;00008233
+	TYX ;00008236
+LAB_0005_00008237:
+	sep.b #$00000020; Immediate8 ;00008237
+	lda.B [$0000000D], y ;DirectIndirectIndexedLong ;00008239
+	sta.b $0000000C ;Direct ;0000823B
+LAB_0005_0000823D:
+	asl $0000000C ;Direct ;0000823D
+	bcc LAB_0005_00008253 ;0000823F
+	rep.b #$00000020 ;Immediate8 ;00008241
+	lda $00000002 ;Direct ;00008243
+	sta.W $00000FBE, x ;AbsoluteIndexedXX0 ;00008245
+	lda $00000002 ;Direct ;00008248
+	CLC ;0000824A
+	adc.w #$00000008 ;0000824B
+	sta $00000002 ;Direct ;0000824E
+	jmp $00008262 ;00008250
+LAB_0005_00008253:
+	rep.b #$00000020 ;Immediate8 ;00008253
+	lda $00000000 ;Direct ;00008255
+	sta.W $00000FBE, x ;AbsoluteIndexedXX0 ;00008257
+	lda $00000000 ;Direct ;0000825A
+	CLC ;0000825C
+	adc.w #$00000008 ;0000825D
+	sta $00000000 ;Direct ;00008260
+;stopped writing due to overlap with another section 000081FB

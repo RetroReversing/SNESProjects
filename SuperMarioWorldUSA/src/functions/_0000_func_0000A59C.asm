@@ -1,0 +1,41 @@
+
+.BANK $0000 SLOT 0
+.ORGA $0000A59C
+	jsr $000085FA ;0000A59C
+	jsr $0000F62D ;0000A59F
+	stz.W $0000143A ;Absolute ;0000A5A2
+	jsr $00008A79 ;0000A5A5
+	jsr $00008CFF ;0000A5A8
+	jsl $0005809E; AbsoluteLong E0 ;0000A5AB
+	lda.W $00000D9B ;Absolute ;0000A5AF
+	bpl LAB_0000_0000A5B9 ;0000A5B2
+	nop ; not executed offset: 0000A5B4
+	nop ; not executed offset: 0000A5B5
+	nop ; not executed offset: 0000A5B6
+	nop ; not executed offset: 0000A5B7
+	nop ; not executed offset: 0000A5B8
+LAB_0000_0000A5B9:
+	jsr $0000A9DA ;0000A5B9
+	jsr $0000ABED ;0000A5BC
+	jsl $0005BE8A; AbsoluteLong E0 ;0000A5BF
+	jsr $00009FB8 ;0000A5C3
+	jsr $0000A5F9 ;0000A5C6
+	jsr $00009260 ;0000A5C9
+	jsr $00009860 ;0000A5CC
+	jsr $0000922F ;0000A5CF
+	jsr $00009F29 ;0000A5D2
+	jsr $00008E1A ;0000A5D5
+	rep.b #$00000030 ;Immediate8 ;0000A5D8
+	PHB ;0000A5DA
+	LDX.W #$00000703 ; Immediate16 ;0000A5DB
+	LDY.W #$00000905 ;Immediate16 ;0000A5DE
+	LDA.W #$000001EF ; Immediate16 ;0000A5E1
+	mvn $00000000, $00000000 ;0000A5E4
+	PLB ;0000A5E7
+	ldx.W $00000701 ;Absolute ;0000A5E8
+	stx.W $00000903 ;Absolute ;0000A5EB
+	sep.b #$00000030; Immediate8 ;0000A5EE
+	jsr $0000919B ;0000A5F0
+	jsr $00008494 ;0000A5F3
+	jmp $000093F4 ;0000A5F6
+;stopped writing due to overlap with another section 0000A59C

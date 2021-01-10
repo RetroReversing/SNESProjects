@@ -1,0 +1,53 @@
+
+.BANK $0001 SLOT 0
+.ORGA $000097D5
+	nop ; not executed offset: 000097D5
+	nop ; not executed offset: 000097D6
+	nop ; not executed offset: 000097D7
+	nop ; not executed offset: 000097D8
+	nop ; not executed offset: 000097D9
+	nop ; not executed offset: 000097DA
+	nop ; not executed offset: 000097DB
+	nop ; not executed offset: 000097DC
+	nop ; not executed offset: 000097DD
+	nop ; not executed offset: 000097DE
+	nop ; not executed offset: 000097DF
+	nop ; not executed offset: 000097E0
+	nop ; not executed offset: 000097E1
+	nop ; not executed offset: 000097E2
+	nop ; not executed offset: 000097E3
+	nop ; not executed offset: 000097E4
+	nop ; not executed offset: 000097E5
+	nop ; not executed offset: 000097E6
+	nop ; not executed offset: 000097E7
+	nop ; not executed offset: 000097E8
+	nop ; not executed offset: 000097E9
+	nop ; not executed offset: 000097EA
+	nop ; not executed offset: 000097EB
+	nop ; not executed offset: 000097EC
+	nop ; not executed offset: 000097ED
+	nop ; not executed offset: 000097EE
+	nop ; not executed offset: 000097EF
+	nop ; not executed offset: 000097F0
+	nop ; not executed offset: 000097F1
+	nop ; not executed offset: 000097F2
+	nop ; not executed offset: 000097F3
+	nop ; not executed offset: 000097F4
+	nop ; not executed offset: 000097F5
+	nop ; not executed offset: 000097F6
+	nop ; not executed offset: 000097F7
+	nop ; not executed offset: 000097F8
+	nop ; not executed offset: 000097F9
+	nop ; not executed offset: 000097FA
+	nop ; not executed offset: 000097FB
+	nop ; not executed offset: 000097FC
+	nop ; not executed offset: 000097FD
+	nop ; not executed offset: 000097FE
+	nop ; not executed offset: 000097FF
+	nop ; not executed offset: 00009800
+	nop ; not executed offset: 00009801
+	nop ; not executed offset: 00009802
+	nop ; not executed offset: 00009803
+	nop ; not executed offset: 00009804
+	nop ; not executed offset: 00009805
+;stopped writing due to overlap with another section 000097D5

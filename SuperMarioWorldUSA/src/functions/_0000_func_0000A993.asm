@@ -1,0 +1,35 @@
+
+.BANK $0000 SLOT 0
+.ORGA $0000A993
+	stz.W $00002116 ;Absolute ;0000A993
+	LDA.B #$00000040; Immediate8 ;0000A996
+	sta.W $00002117 ;Absolute ;0000A998
+	LDA.B #$00000003; Immediate8 ;0000A99B
+	sta.b $0000000F ;Direct ;0000A99D
+	LDA.B #$00000028; Immediate8 ;0000A99F
+	sta.b $0000000E ;Direct ;0000A9A1
+LAB_0000_0000A9A3:
+	lda.b $0000000E ;Direct ;0000A9A3
+	TAY ;0000A9A5
+	jsl $0000BA28; AbsoluteLong E0 ;0000A9A6
+	rep.b #$00000030 ;Immediate8 ;0000A9AA
+	LDX.W #$000003FF ; Immediate16 ;0000A9AC
+	LDY.W #$00000000 ;Immediate16 ;0000A9AF
+LAB_0000_0000A9B2:
+	lda.B [$00000000], y ;DirectIndirectIndexedLong ;0000A9B2
+	sta.W $00002118 ;Absolute ;0000A9B4
+	INY ;0000A9B7
+	INY ;0000A9B8
+	DEX ;0000A9B9
+	bpl LAB_0000_0000A9B2 ;0000A9BA
+	sep.b #$00000030; Immediate8 ;0000A9BC
+	inc $0000000E ;Direct ;inc.b $0000000E ;Direct ;0000A9BE
+	dec $0000000F ;Direct ;0000A9C0
+	bpl LAB_0000_0000A9A3 ;0000A9C2
+	stz.W $00002116 ;Absolute ;0000A9C4
+	LDA.B #$00000060; Immediate8 ;0000A9C7
+	sta.W $00002117 ;Absolute ;0000A9C9
+	LDY.B #$00000000 ;Immediate8 ;0000A9CC
+	jsr $0000AA6B ;0000A9CE
+	rts ;0000A9D1
+;stopped writing due to overlap with another section 0000A993

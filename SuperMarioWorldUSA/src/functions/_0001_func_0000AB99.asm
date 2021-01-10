@@ -1,0 +1,55 @@
+
+.BANK $0001 SLOT 0
+.ORGA $0000AB99
+	nop ; not executed offset: 0000AB99
+	nop ; not executed offset: 0000AB9A
+	nop ; not executed offset: 0000AB9B
+	nop ; not executed offset: 0000AB9C
+	nop ; not executed offset: 0000AB9D
+	nop ; not executed offset: 0000AB9E
+	nop ; not executed offset: 0000AB9F
+	nop ; not executed offset: 0000ABA0
+	nop ; not executed offset: 0000ABA1
+	nop ; not executed offset: 0000ABA2
+	nop ; not executed offset: 0000ABA3
+	nop ; not executed offset: 0000ABA4
+	nop ; not executed offset: 0000ABA5
+	nop ; not executed offset: 0000ABA6
+	nop ; not executed offset: 0000ABA7
+	nop ; not executed offset: 0000ABA8
+	nop ; not executed offset: 0000ABA9
+	nop ; not executed offset: 0000ABAA
+	nop ; not executed offset: 0000ABAB
+	nop ; not executed offset: 0000ABAC
+	nop ; not executed offset: 0000ABAD
+	nop ; not executed offset: 0000ABAE
+	nop ; not executed offset: 0000ABAF
+	nop ; not executed offset: 0000ABB0
+	nop ; not executed offset: 0000ABB1
+	nop ; not executed offset: 0000ABB2
+	nop ; not executed offset: 0000ABB3
+	nop ; not executed offset: 0000ABB4
+	nop ; not executed offset: 0000ABB5
+	nop ; not executed offset: 0000ABB6
+	nop ; not executed offset: 0000ABB7
+	nop ; not executed offset: 0000ABB8
+	nop ; not executed offset: 0000ABB9
+	nop ; not executed offset: 0000ABBA
+	nop ; not executed offset: 0000ABBB
+	nop ; not executed offset: 0000ABBC
+	nop ; not executed offset: 0000ABBD
+	nop ; not executed offset: 0000ABBE
+	nop ; not executed offset: 0000ABBF
+	nop ; not executed offset: 0000ABC0
+	nop ; not executed offset: 0000ABC1
+	nop ; not executed offset: 0000ABC2
+	nop ; not executed offset: 0000ABC3
+	nop ; not executed offset: 0000ABC4
+	nop ; not executed offset: 0000ABC5
+	nop ; not executed offset: 0000ABC6
+	nop ; not executed offset: 0000ABC7
+	nop ; not executed offset: 0000ABC8
+	nop ; not executed offset: 0000ABC9
+	nop ; not executed offset: 0000ABCA
+	nop ; not executed offset: 0000ABCB
+;stopped writing due to overlap with another section 0000AB99

@@ -1,0 +1,23 @@
+
+.BANK $000D SLOT 0
+.ORGA $0000A95D
+	INY ;0000A95D
+	TYA ;0000A95E
+	AND.B #$0000000F ;Immediate8 ;0000A95F
+	bne LAB_000D_0000A97C ;0000A961
+	lda.b $0000006B ;Direct ;0000A963
+	CLC ;0000A965
+	adc.b #$000000B0 ;Immediate8 ;0000A966
+	sta.b $0000006B ;Direct ;0000A968
+	sta.b $0000006E ;Direct ;0000A96A
+	lda.b $0000006C ;Direct ;0000A96C
+	adc.b #$00000001 ;Immediate8 ;0000A96E
+	sta.b $0000006C ;Direct ;0000A970
+	sta.b $0000006F ;Direct ;0000A972
+	inc.W $00001BA1 ;Absolute ;0000A974
+	lda.b $00000057 ;Direct ;0000A977
+	AND.B #$000000F0 ;Immediate8 ;0000A979
+	TAY ;0000A97B
+LAB_000D_0000A97C:
+	rts ;0000A97C
+;stopped writing due to overlap with another section 0000A95D

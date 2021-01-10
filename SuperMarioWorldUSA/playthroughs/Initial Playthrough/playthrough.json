@@ -1,0 +1,26 @@
+{
+  "current_state": {
+    "frame": 440,
+    "name": "Mario Jump"
+  },
+  "last_frame": 440,
+  "name": "Initial Playthrough",
+  "states": [
+    {
+      "frame": 182,
+      "name": "nintendo presents"
+    },
+    {
+      "frame": 327,
+      "name": "start"
+    },
+    {
+      "frame": 416,
+      "name": "Mario appeared"
+    },
+    {
+      "frame": 440,
+      "name": "Mario Jump"
+    }
+  ]
+}

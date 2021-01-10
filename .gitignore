@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+SuperMarioWorldUSArr/
+trace_log.txt
+.DS_Store
+*.png
+*.sfc

@@ -1,0 +1,23 @@
+
+.BANK $0000 SLOT 0
+.ORGA $0000810E
+	LDA.B #$000000B1; Immediate8 ;0000810E
+	sta.W $00000000 ;Absolute ;00008110
+	LDA.B #$00000098; Immediate8 ;00008113
+	sta.W $00000001 ;Absolute ;00008115
+	LDA.B #$0000000E; Immediate8 ;00008118
+	sta.W $00000002 ;Absolute ;0000811A
+LAB_0000_0000811D:
+	LDA.B #$000000FF; Immediate8 ;0000811D
+	sta.W $00002141 ;Absolute ;0000811F
+	jsr $000080F7 ;00008122
+	LDX.B #$00000003 ;Immediate8 ;00008125
+LAB_0000_00008127:
+	stz.W $00002140, x ;AbsoluteIndexedXX1 ;00008127
+	stz.W $00001DF9, x ;AbsoluteIndexedXX1 ;0000812A
+	stz.W $00001DFD, x ;AbsoluteIndexedXX1 ;0000812D
+	DEX ;00008130
+	bpl LAB_0000_00008127 ;00008131
+LAB_0000_00008133:
+	rts ;00008133
+;stopped writing due to overlap with another section 0000810E

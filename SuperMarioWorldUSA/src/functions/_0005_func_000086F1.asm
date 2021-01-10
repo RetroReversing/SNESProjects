@@ -1,0 +1,55 @@
+
+.BANK $0005 SLOT 0
+.ORGA $000086F1
+	nop ; not executed offset: 000086F1
+	nop ; not executed offset: 000086F2
+	nop ; not executed offset: 000086F3
+	nop ; not executed offset: 000086F4
+	nop ; not executed offset: 000086F5
+	nop ; not executed offset: 000086F6
+	nop ; not executed offset: 000086F7
+	nop ; not executed offset: 000086F8
+	nop ; not executed offset: 000086F9
+	nop ; not executed offset: 000086FA
+	nop ; not executed offset: 000086FB
+	nop ; not executed offset: 000086FC
+	nop ; not executed offset: 000086FD
+	nop ; not executed offset: 000086FE
+	nop ; not executed offset: 000086FF
+	nop ; not executed offset: 00008700
+	nop ; not executed offset: 00008701
+	nop ; not executed offset: 00008702
+	nop ; not executed offset: 00008703
+	nop ; not executed offset: 00008704
+	nop ; not executed offset: 00008705
+	nop ; not executed offset: 00008706
+	nop ; not executed offset: 00008707
+	nop ; not executed offset: 00008708
+	nop ; not executed offset: 00008709
+	nop ; not executed offset: 0000870A
+	nop ; not executed offset: 0000870B
+	nop ; not executed offset: 0000870C
+	nop ; not executed offset: 0000870D
+	nop ; not executed offset: 0000870E
+	nop ; not executed offset: 0000870F
+	nop ; not executed offset: 00008710
+	nop ; not executed offset: 00008711
+	nop ; not executed offset: 00008712
+	nop ; not executed offset: 00008713
+	nop ; not executed offset: 00008714
+	nop ; not executed offset: 00008715
+	nop ; not executed offset: 00008716
+	nop ; not executed offset: 00008717
+	nop ; not executed offset: 00008718
+	nop ; not executed offset: 00008719
+	nop ; not executed offset: 0000871A
+	nop ; not executed offset: 0000871B
+	nop ; not executed offset: 0000871C
+	nop ; not executed offset: 0000871D
+	nop ; not executed offset: 0000871E
+	nop ; not executed offset: 0000871F
+	nop ; not executed offset: 00008720
+	nop ; not executed offset: 00008721
+	nop ; not executed offset: 00008722
+	nop ; not executed offset: 00008723
+;stopped writing due to overlap with another section 000086F1
